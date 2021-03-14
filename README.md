@@ -5,7 +5,7 @@ test project for global logic
 1) clone the project using https://github.com/Milanmangar/global_logic_furniture_company.git in command prompt
 2) cd ```global_logic_furniture_company/django-furniture_factory/furniture_factory```
 3) pip install -r requirements.txt (can be ran directly or create virtual environment and run it inside virtual environment)
-4) create folder table_data/logs in path global_logic_furniture_company/django-furniture_factory/furniture_factory ``skip it, if folder already present``
+4) create folder table_data/logs in path global_logic_furniture_company/django-furniture_factory/furniture_factory ``please skip it, if folder already present``
 5) python manage.py migrate
 6) python manage.py createsuperuser and fill in the details
 7) python manage.py runserver, this will run django project in http://127.0.0.0:8000
