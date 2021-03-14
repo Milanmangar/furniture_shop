@@ -1,0 +1,320 @@
+{
+	"info": {
+		"_postman_id": "b7123750-b97d-42a8-a95e-ce29052ca65a",
+		"name": "dummy",
+		"description": "in body please pass username and password\r\n",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get authentication token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Test@123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api-token-auth/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api-token-auth",
+						""
+					]
+				},
+				"description": "get authentication token"
+			},
+			"response": []
+		},
+		{
+			"name": "table get call",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Token 45cd4457982d2a074f8171375fcd4e93dbb5948b"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "teak table",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "Test@123",
+							"type": "text",
+							"disabled": true
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/table/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"table",
+						""
+					]
+				},
+				"description": "get all data from table"
+			},
+			"response": []
+		},
+		{
+			"name": "create new table",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Token 45cd4457982d2a074f8171375fcd4e93dbb5948b"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"brown tinst\",\r\n    \"description\": \"big wooden table with rounded top\",\r\n    \"price\": 2000,\r\n    \"legs\": \"kiran thapaa\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/table/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"table",
+						""
+					]
+				},
+				"description": "create new table"
+			},
+			"response": []
+		},
+		{
+			"name": "update existing table",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Token 45cd4457982d2a074f8171375fcd4e93dbb5948b"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"description\": \"update wooden28887\",\r\n    \"price\": 6008550,\r\n    \"legs\": \"samosa\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/table/iron/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"table",
+						"iron",
+						""
+					]
+				},
+				"description": "update existing table"
+			},
+			"response": []
+		},
+		{
+			"name": "delete table with table name",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Token 45cd4457982d2a074f8171375fcd4e93dbb5948b"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"description\": \"update wooden28887\",\r\n    \"price\": 6008550,\r\n    \"legs\": \"Egg Roll\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/table/Brown Tinst/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"table",
+						"Brown Tinst",
+						""
+					]
+				},
+				"description": "delete table with table name"
+			},
+			"response": []
+		},
+		{
+			"name": "partial update existing table",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Token 45cd4457982d2a074f8171375fcd4e93dbb5948b"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"price\": 85\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/table/iron/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"table",
+						"iron",
+						""
+					]
+				},
+				"description": "partial update existing table"
+			},
+			"response": []
+		},
+		{
+			"name": "table get specific table by table name",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Token 45cd4457982d2a074f8171375fcd4e93dbb5948b",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "milan",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "Test@123",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/table/iron/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"table",
+						"iron",
+						""
+					]
+				},
+				"description": "table get specific table by table name"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

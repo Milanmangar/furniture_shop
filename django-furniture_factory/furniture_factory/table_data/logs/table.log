@@ -1,0 +1,1185 @@
+INFO 2021-03-13 20:52:52,898 api 30080 32688 
+on root get request got an error: Traceback (most recent call last):
+  File "C:\backup\my_works\global_logic\furniture_factory\table\table_api\api.py", line 30, in list
+    query_set = self.get_querysets()
+AttributeError: 'TableViewset' object has no attribute 'get_querysets'
+
+
+INFO 2021-03-13 21:02:45,490 api 28524 29712 
+on root get request got an error: Traceback (most recent call last):
+  File "C:\backup\my_works\global_logic\furniture_factory\table\table_api\api.py", line 36, in list
+    serialized_result = self.get_serializer(query_set, many=True)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\generics.py", line 108, in get_serializer
+    serializer_class = self.get_serializer_class()
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\generics.py", line 125, in get_serializer_class
+    % self.__class__.__name__
+AssertionError: 'TableViewset' should either include a `serializer_class` attribute, or override the `get_serializer_class()` method.
+
+
+INFO 2021-03-13 22:15:23,406 api 30024 30008 
+on root post request got an error: Traceback (most recent call last):
+  File "C:\backup\my_works\global_logic\furniture_factory\table\table_api\api.py", line 19, in create
+    data["name"] = data["name"] .title()
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\http\request.py", line 458, in __setitem__
+    self._assert_mutable()
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\http\request.py", line 455, in _assert_mutable
+    raise AttributeError("This QueryDict instance is immutable")
+AttributeError: This QueryDict instance is immutable
+
+
+INFO 2021-03-13 22:16:34,483 api 18456 22836 
+on root post request got an error: Traceback (most recent call last):
+  File "C:\backup\my_works\global_logic\furniture_factory\table\table_api\api.py", line 20, in create
+    data["name"] = data["name"] .title()
+  File "C:\backup\my_works\global_logic\furniture_factory\table\table_api\api.py", line 20, in create
+    data["name"] = data["name"] .title()
+  File "c:\users\mthapa\appdata\local\continuum\anaconda3\Lib\bdb.py", line 88, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "c:\users\mthapa\appdata\local\continuum\anaconda3\Lib\bdb.py", line 113, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+
+
+INFO 2021-03-13 22:19:56,304 api 18456 24512 
+on root post request got an error: Traceback (most recent call last):
+  File "C:\backup\my_works\global_logic\furniture_factory\table\table_api\api.py", line 20, in create
+    data["name"] = data["name"] .title()
+  File "C:\backup\my_works\global_logic\furniture_factory\table\table_api\api.py", line 20, in create
+    data["name"] = data["name"] .title()
+  File "c:\users\mthapa\appdata\local\continuum\anaconda3\Lib\bdb.py", line 88, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "c:\users\mthapa\appdata\local\continuum\anaconda3\Lib\bdb.py", line 113, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+
+
+INFO 2021-03-13 22:22:37,450 api 24240 29024 
+on root post request got an error: Traceback (most recent call last):
+  File "C:\backup\my_works\global_logic\furniture_factory\table\table_api\api.py", line 20, in create
+    data["name"] = data["name"].title()
+  File "C:\backup\my_works\global_logic\furniture_factory\table\table_api\api.py", line 20, in create
+    data["name"] = data["name"].title()
+  File "c:\users\mthapa\appdata\local\continuum\anaconda3\Lib\bdb.py", line 88, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "c:\users\mthapa\appdata\local\continuum\anaconda3\Lib\bdb.py", line 113, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+
+
+INFO 2021-03-13 22:23:27,037 api 28820 29256 
+on root post request got an error: Traceback (most recent call last):
+  File "C:\backup\my_works\global_logic\furniture_factory\table\table_api\api.py", line 22, in create
+    serializer.is_valid(raise_exception=True)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 228, in is_valid
+    raise ValidationError(self.errors)
+rest_framework.exceptions.ValidationError: {'legs': [ErrorDetail(string='This field is required.', code='required')]}
+
+
+INFO 2021-03-13 22:36:14,072 api 28344 19332 
+on root post request got an error: Traceback (most recent call last):
+  File "C:\backup\my_works\global_logic\furniture_factory\table\table_api\api.py", line 22, in create
+    if serializer.is_valid():
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 220, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 419, in run_validation
+    value = self.to_internal_value(data)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 472, in to_internal_value
+    for field in fields:
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 355, in _writable_fields
+    for field in self.fields.values():
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\utils\functional.py", line 80, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 349, in fields
+    for key, value in self.get_fields().items():
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 1029, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 1130, in get_field_names
+    serializer_class=self.__class__.__name__
+AssertionError: The field 'leg' was declared on serializer TableSerializer, but has not been included in the 'fields' option.
+
+
+INFO 2021-03-13 22:39:08,434 api 22484 24108 
+on root post request got an error: Traceback (most recent call last):
+  File "C:\backup\my_works\global_logic\furniture_factory\table\table_api\api.py", line 22, in create
+    if serializer.is_valid():
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 220, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 419, in run_validation
+    value = self.to_internal_value(data)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 476, in to_internal_value
+    validated_value = field.run_validation(primitive_value)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\relations.py", line 153, in run_validation
+    return super().run_validation(data)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\fields.py", line 568, in run_validation
+    value = self.to_internal_value(data)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\fields.py", line 615, in to_internal_value
+    field_name=self.field_name,
+NotImplementedError: RelatedField.to_internal_value() must be implemented for field legs. If you do not need to support write operations you probably want to subclass `ReadOnlyField` instead.
+
+
+INFO 2021-03-13 22:39:57,604 api 21740 8436 
+on root post request got an error: Traceback (most recent call last):
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\sqlite3\base.py", line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: table_table.legs_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\backup\my_works\global_logic\furniture_factory\table\table_api\api.py", line 23, in create
+    serializer.save()
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 205, in save
+    self.instance = self.create(validated_data)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 939, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\query.py", line 422, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\base.py", line 741, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\base.py", line 779, in save_base
+    force_update, using, update_fields,
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\base.py", line 870, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\base.py", line 908, in _do_insert
+    using=using, raw=raw)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\query.py", line 1186, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\sql\compiler.py", line 1332, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\sqlite3\base.py", line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: table_table.legs_id
+
+
+INFO 2021-03-13 22:41:36,848 api 28244 9780 
+on root post request got an error: Traceback (most recent call last):
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\sqlite3\base.py", line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: table_table.legs_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\backup\my_works\global_logic\furniture_factory\table\table_api\api.py", line 23, in create
+    serializer.save()
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 205, in save
+    self.instance = self.create(validated_data)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 939, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\query.py", line 422, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\base.py", line 741, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\base.py", line 779, in save_base
+    force_update, using, update_fields,
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\base.py", line 870, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\base.py", line 908, in _do_insert
+    using=using, raw=raw)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\query.py", line 1186, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\sql\compiler.py", line 1332, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\sqlite3\base.py", line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: table_table.legs_id
+
+
+INFO 2021-03-13 22:46:04,808 api 20396 32024 
+on root post request got an error: Traceback (most recent call last):
+  File "C:\backup\my_works\global_logic\furniture_factory\table\table_api\api.py", line 22, in create
+    if serializer.is_valid():
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 220, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 419, in run_validation
+    value = self.to_internal_value(data)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 478, in to_internal_value
+    validated_value = validate_method(validated_value)
+  File "C:\backup\my_works\global_logic\furniture_factory\table\serializers_table\serializers.py", line 17, in validate_legs
+    if not is_valid_leg.exist():
+AttributeError: 'QuerySet' object has no attribute 'exist'
+
+
+INFO 2021-03-13 23:01:05,067 api 3704 24440 
+on root post request got an error: Traceback (most recent call last):
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\sqlite3\base.py", line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: table_table.legs_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\backup\my_works\global_logic\furniture_factory\table\table_api\api.py", line 23, in create
+    serializer.save()
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 205, in save
+    self.instance = self.create(validated_data)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 939, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\query.py", line 422, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\base.py", line 741, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\base.py", line 779, in save_base
+    force_update, using, update_fields,
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\base.py", line 870, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\base.py", line 908, in _do_insert
+    using=using, raw=raw)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\query.py", line 1186, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\sql\compiler.py", line 1332, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\sqlite3\base.py", line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: table_table.legs_id
+
+
+INFO 2021-03-13 23:03:44,840 api 3704 24440 
+on root post request got an error: Traceback (most recent call last):
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\sqlite3\base.py", line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: table_table.legs_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\backup\my_works\global_logic\furniture_factory\table\table_api\api.py", line 23, in create
+    serializer.save()
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 205, in save
+    self.instance = self.create(validated_data)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 939, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\query.py", line 422, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\base.py", line 741, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\base.py", line 779, in save_base
+    force_update, using, update_fields,
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\base.py", line 870, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\base.py", line 908, in _do_insert
+    using=using, raw=raw)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\query.py", line 1186, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\sql\compiler.py", line 1332, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\sqlite3\base.py", line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: table_table.legs_id
+
+
+INFO 2021-03-13 23:06:19,067 api 26708 20828 
+on root post request got an error: Traceback (most recent call last):
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\sqlite3\base.py", line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: table_table.legs_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\backup\my_works\global_logic\furniture_factory\table\table_api\api.py", line 23, in create
+    serializer.save()
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 205, in save
+    self.instance = self.create(validated_data)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 939, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\query.py", line 422, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\base.py", line 741, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\base.py", line 779, in save_base
+    force_update, using, update_fields,
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\base.py", line 870, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\base.py", line 908, in _do_insert
+    using=using, raw=raw)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\query.py", line 1186, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\sql\compiler.py", line 1332, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\sqlite3\base.py", line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: table_table.legs_id
+
+
+INFO 2021-03-13 23:09:39,708 api 22800 20708 
+on root post request got an error: Traceback (most recent call last):
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\sqlite3\base.py", line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: table_table.legs_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\backup\my_works\global_logic\furniture_factory\table\table_api\api.py", line 23, in create
+    serializer.save()
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 205, in save
+    self.instance = self.create(validated_data)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 939, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\query.py", line 422, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\base.py", line 741, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\base.py", line 779, in save_base
+    force_update, using, update_fields,
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\base.py", line 870, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\base.py", line 908, in _do_insert
+    using=using, raw=raw)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\query.py", line 1186, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\sql\compiler.py", line 1332, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\sqlite3\base.py", line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: table_table.legs_id
+
+
+INFO 2021-03-13 23:12:23,580 api 29844 16368 
+on root get request got an error: Traceback (most recent call last):
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\fields.py", line 457, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\fields.py", line 97, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'Table' object has no attribute 'Table'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\backup\my_works\global_logic\furniture_factory\table\table_api\api.py", line 49, in list
+    return Response({"result": serialized_result.data, "status": "success"}, status=status.HTTP_200_OK)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 745, in data
+    ret = super().data
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 664, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 664, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 502, in to_representation
+    attribute = field.get_attribute(instance)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\fields.py", line 490, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `legs` on serializer `TableSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `Table` instance.
+Original exception text was: 'Table' object has no attribute 'Table'.
+
+
+INFO 2021-03-13 23:15:48,487 api 31052 6764 
+on root post request got an error: Traceback (most recent call last):
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\sqlite3\base.py", line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: table_table.legs_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\backup\my_works\global_logic\furniture_factory\table\table_api\api.py", line 23, in create
+    serializer.save()
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 205, in save
+    self.instance = self.create(validated_data)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 939, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\query.py", line 422, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\base.py", line 741, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\base.py", line 779, in save_base
+    force_update, using, update_fields,
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\base.py", line 870, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\base.py", line 908, in _do_insert
+    using=using, raw=raw)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\query.py", line 1186, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\sql\compiler.py", line 1332, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\sqlite3\base.py", line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: table_table.legs_id
+
+
+INFO 2021-03-13 23:16:09,154 api 31052 15248 
+on root post request got an error: Traceback (most recent call last):
+  File "C:\backup\my_works\global_logic\furniture_factory\table\table_api\api.py", line 20, in create
+    data["name"] = data["name"].title()
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\http\request.py", line 458, in __setitem__
+    self._assert_mutable()
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\http\request.py", line 455, in _assert_mutable
+    raise AttributeError("This QueryDict instance is immutable")
+AttributeError: This QueryDict instance is immutable
+
+
+INFO 2021-03-13 23:18:17,845 api 31052 6764 
+on root post request got an error: Traceback (most recent call last):
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\sqlite3\base.py", line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: table_table.legs_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\backup\my_works\global_logic\furniture_factory\table\table_api\api.py", line 23, in create
+    serializer.save()
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 205, in save
+    self.instance = self.create(validated_data)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 939, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\query.py", line 422, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\base.py", line 741, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\base.py", line 779, in save_base
+    force_update, using, update_fields,
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\base.py", line 870, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\base.py", line 908, in _do_insert
+    using=using, raw=raw)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\query.py", line 1186, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\sql\compiler.py", line 1332, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\sqlite3\base.py", line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: table_table.legs_id
+
+
+INFO 2021-03-13 23:20:45,773 api 6188 31904 
+on root post request got an error: Traceback (most recent call last):
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\sqlite3\base.py", line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: table_table.legs_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\backup\my_works\global_logic\furniture_factory\table\table_api\api.py", line 23, in create
+    serializer.save()
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 205, in save
+    self.instance = self.create(validated_data)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 939, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\query.py", line 422, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\base.py", line 741, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\base.py", line 779, in save_base
+    force_update, using, update_fields,
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\base.py", line 870, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\base.py", line 908, in _do_insert
+    using=using, raw=raw)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\query.py", line 1186, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\sql\compiler.py", line 1332, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\sqlite3\base.py", line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: table_table.legs_id
+
+
+INFO 2021-03-13 23:20:56,717 api 6188 2420 
+on root post request got an error: Traceback (most recent call last):
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\sqlite3\base.py", line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: table_table.legs_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\backup\my_works\global_logic\furniture_factory\table\table_api\api.py", line 23, in create
+    serializer.save()
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 205, in save
+    self.instance = self.create(validated_data)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 939, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\query.py", line 422, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\base.py", line 741, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\base.py", line 779, in save_base
+    force_update, using, update_fields,
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\base.py", line 870, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\base.py", line 908, in _do_insert
+    using=using, raw=raw)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\query.py", line 1186, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\sql\compiler.py", line 1332, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\sqlite3\base.py", line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: table_table.legs_id
+
+
+INFO 2021-03-13 23:21:07,724 api 6188 22740 
+on root post request got an error: Traceback (most recent call last):
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\sqlite3\base.py", line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: table_table.legs_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\backup\my_works\global_logic\furniture_factory\table\table_api\api.py", line 23, in create
+    serializer.save()
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 205, in save
+    self.instance = self.create(validated_data)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 939, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\query.py", line 422, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\base.py", line 741, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\base.py", line 779, in save_base
+    force_update, using, update_fields,
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\base.py", line 870, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\base.py", line 908, in _do_insert
+    using=using, raw=raw)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\query.py", line 1186, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\sql\compiler.py", line 1332, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\sqlite3\base.py", line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: table_table.legs_id
+
+
+INFO 2021-03-13 23:31:18,916 api 25212 9432 
+on root post request got an error: Traceback (most recent call last):
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\sqlite3\base.py", line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: UNIQUE constraint failed: table_table.legs_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\backup\my_works\global_logic\furniture_factory\table\table_api\api.py", line 23, in create
+    serializer.save(legs=Leg.objects.get(name=data["legs"]))
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 205, in save
+    self.instance = self.create(validated_data)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 939, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\query.py", line 422, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\base.py", line 741, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\base.py", line 779, in save_base
+    force_update, using, update_fields,
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\base.py", line 870, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\base.py", line 908, in _do_insert
+    using=using, raw=raw)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\query.py", line 1186, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\sql\compiler.py", line 1332, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\sqlite3\base.py", line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: UNIQUE constraint failed: table_table.legs_id
+
+
+INFO 2021-03-13 23:36:54,598 api 24952 11576 
+on root post request got an error: Traceback (most recent call last):
+  File "C:\backup\my_works\global_logic\furniture_factory\table\table_api\api.py", line 23, in create
+    if serializer.is_valid():
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 220, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 422, in run_validation
+    value = self.validate(value)
+TypeError: validate() missing 1 required positional argument: 'data'
+
+
+INFO 2021-03-13 23:37:47,337 api 29132 25520 
+on root post request got an error: Traceback (most recent call last):
+  File "C:\backup\my_works\global_logic\furniture_factory\table\table_api\api.py", line 23, in create
+    if serializer.is_valid(data):
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 220, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 422, in run_validation
+    value = self.validate(value)
+TypeError: validate() missing 1 required positional argument: 'data'
+
+
+INFO 2021-03-13 23:38:32,534 api 5048 20560 
+on root post request got an error: Traceback (most recent call last):
+  File "C:\backup\my_works\global_logic\furniture_factory\table\table_api\api.py", line 23, in create
+    if serializer.is_valid():
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 220, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 423, in run_validation
+    assert value is not None, '.validate() should return the validated data'
+AssertionError: .validate() should return the validated data
+
+
+INFO 2021-03-13 23:39:29,429 api 10324 14772 
+on root post request got an error: Traceback (most recent call last):
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\sqlite3\base.py", line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: UNIQUE constraint failed: table_table.legs_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\backup\my_works\global_logic\furniture_factory\table\table_api\api.py", line 24, in create
+    serializer.save(legs=Leg.objects.get(name=data["legs"]))
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 205, in save
+    self.instance = self.create(validated_data)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 939, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\query.py", line 422, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\base.py", line 741, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\base.py", line 779, in save_base
+    force_update, using, update_fields,
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\base.py", line 870, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\base.py", line 908, in _do_insert
+    using=using, raw=raw)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\query.py", line 1186, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\sql\compiler.py", line 1332, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\sqlite3\base.py", line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: UNIQUE constraint failed: table_table.legs_id
+
+
+INFO 2021-03-13 23:41:23,891 api 30032 32648 
+on root post request got an error: Traceback (most recent call last):
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\sqlite3\base.py", line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: UNIQUE constraint failed: table_table.legs_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\backup\my_works\global_logic\furniture_factory\table\table_api\api.py", line 24, in create
+    serializer.save(legs=Leg.objects.get(name=data["legs"]))
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 205, in save
+    self.instance = self.create(validated_data)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 939, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\query.py", line 422, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\base.py", line 741, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\base.py", line 779, in save_base
+    force_update, using, update_fields,
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\base.py", line 870, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\base.py", line 908, in _do_insert
+    using=using, raw=raw)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\query.py", line 1186, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\sql\compiler.py", line 1332, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\sqlite3\base.py", line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: UNIQUE constraint failed: table_table.legs_id
+
+
+INFO 2021-03-13 23:43:18,210 api 29068 17256 
+on root post request got an error: Traceback (most recent call last):
+  File "C:\backup\my_works\global_logic\furniture_factory\table\table_api\api.py", line 23, in create
+    if serializer.is_valid():
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 220, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 422, in run_validation
+    value = self.validate(value)
+  File "C:\backup\my_works\global_logic\furniture_factory\table\serializers_table\serializers.py", line 27, in validate
+    return data
+  File "C:\backup\my_works\global_logic\furniture_factory\table\serializers_table\serializers.py", line 27, in validate
+    return data
+  File "c:\users\mthapa\appdata\local\continuum\anaconda3\Lib\bdb.py", line 88, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "c:\users\mthapa\appdata\local\continuum\anaconda3\Lib\bdb.py", line 113, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+
+
+INFO 2021-03-13 23:52:18,060 api 9652 8768 
+on root post request got an error: Traceback (most recent call last):
+  File "C:\backup\my_works\global_logic\furniture_factory\table\table_api\api.py", line 23, in create
+    if serializer.is_valid():
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 220, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 422, in run_validation
+    value = self.validate(value)
+  File "C:\backup\my_works\global_logic\furniture_factory\table\serializers_table\serializers.py", line 21, in validate
+    all_legs_in_table = [table.legs.name for table in Table.objects.all()]
+  File "C:\backup\my_works\global_logic\furniture_factory\table\serializers_table\serializers.py", line 21, in validate
+    all_legs_in_table = [table.legs.name for table in Table.objects.all()]
+  File "c:\users\mthapa\appdata\local\continuum\anaconda3\Lib\bdb.py", line 88, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "c:\users\mthapa\appdata\local\continuum\anaconda3\Lib\bdb.py", line 113, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+
+
+INFO 2021-03-13 23:54:26,483 api 25808 6996 
+on root post request got an error: Traceback (most recent call last):
+  File "C:\backup\my_works\global_logic\furniture_factory\table\table_api\api.py", line 23, in create
+    if serializer.is_valid():
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 220, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 422, in run_validation
+    value = self.validate(value)
+  File "C:\backup\my_works\global_logic\furniture_factory\table\serializers_table\serializers.py", line 28, in validate
+    return data
+  File "C:\backup\my_works\global_logic\furniture_factory\table\serializers_table\serializers.py", line 28, in validate
+    return data
+  File "c:\users\mthapa\appdata\local\continuum\anaconda3\Lib\bdb.py", line 88, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "c:\users\mthapa\appdata\local\continuum\anaconda3\Lib\bdb.py", line 113, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+
+
+INFO 2021-03-13 23:56:16,896 api 14440 28568 
+on root post request got an error: Traceback (most recent call last):
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\sqlite3\base.py", line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: UNIQUE constraint failed: table_table.legs_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\backup\my_works\global_logic\furniture_factory\table\table_api\api.py", line 24, in create
+    serializer.save(legs=Leg.objects.get(name=data["legs"]))
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 205, in save
+    self.instance = self.create(validated_data)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 939, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\query.py", line 422, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\base.py", line 741, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\base.py", line 779, in save_base
+    force_update, using, update_fields,
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\base.py", line 870, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\base.py", line 908, in _do_insert
+    using=using, raw=raw)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\query.py", line 1186, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\sql\compiler.py", line 1332, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\backends\sqlite3\base.py", line 383, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: UNIQUE constraint failed: table_table.legs_id
+
+
+INFO 2021-03-14 09:49:33,445 api 9988 21240 
+on root post request got an error: Traceback (most recent call last):
+  File "C:\backup\my_works\global_logic\furniture_factory\table\table_api\api.py", line 35, in create
+    if serializer.is_valid():
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 220, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 422, in run_validation
+    value = self.validate(value)
+  File "C:\backup\my_works\global_logic\furniture_factory\table\serializers_table\serializers.py", line 18, in validate
+    is_valid_leg = Leg.objects.filter(name__iexact=data["legs"].name).exists()
+  File "C:\backup\my_works\global_logic\furniture_factory\table\serializers_table\serializers.py", line 18, in validate
+    is_valid_leg = Leg.objects.filter(name__iexact=data["legs"].name).exists()
+  File "c:\users\mthapa\appdata\local\continuum\anaconda3\Lib\bdb.py", line 88, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "c:\users\mthapa\appdata\local\continuum\anaconda3\Lib\bdb.py", line 113, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+
+
+INFO 2021-03-14 10:17:07,786 api 21756 17180 
+on root retrieve request got an error: Traceback (most recent call last):
+  File "C:\backup\my_works\global_logic\furniture_factory\table\table_api\api.py", line 106, in update
+    instance = self.queryset.get(pk=pk)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\query.py", line 408, in get
+    self.model._meta.object_name
+table.models.Table.DoesNotExist: Table matching query does not exist.
+
+
+INFO 2021-03-14 10:18:59,250 api 21756 17180 
+on root retrieve request got an error: Traceback (most recent call last):
+  File "C:\backup\my_works\global_logic\furniture_factory\table\table_api\api.py", line 106, in update
+    instance = self.queryset.get(pk=pk)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\query.py", line 408, in get
+    self.model._meta.object_name
+table.models.Table.DoesNotExist: Table matching query does not exist.
+
+
+INFO 2021-03-14 10:20:44,496 api 21756 17180 
+on root retrieve request got an error: Traceback (most recent call last):
+  File "C:\backup\my_works\global_logic\furniture_factory\table\table_api\api.py", line 106, in update
+    try:
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\query.py", line 408, in get
+    self.model._meta.object_name
+table.models.Table.DoesNotExist: Table matching query does not exist.
+
+
+INFO 2021-03-14 10:52:26,046 api 29880 13660 
+on root retrieve request got an error: Traceback (most recent call last):
+  File "C:\backup\my_works\global_logic\furniture_factory\table\table_api\api.py", line 107, in update
+    instance = self.queryset.get(name=pk)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 214, in is_valid
+    'Cannot call `.is_valid()` as no `data=` keyword argument was '
+AssertionError: Cannot call `.is_valid()` as no `data=` keyword argument was passed when instantiating the serializer instance.
+
+
+INFO 2021-03-14 10:59:13,749 api 14616 20240 
+on root retrieve request got an error: Traceback (most recent call last):
+  File "C:\backup\my_works\global_logic\furniture_factory\table\table_api\api.py", line 142, in partial_update
+    instance = self.queryset.get(pk=kwargs.get('pk'))
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 220, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 422, in run_validation
+    value = self.validate(value)
+  File "C:\backup\my_works\global_logic\furniture_factory\table\serializers_table\serializers.py", line 16, in validate
+    is_valid_leg = Leg.objects.filter(name__iexact=data["legs"].name).exists()
+KeyError: 'legs'
+
+
+INFO 2021-03-14 11:01:11,722 api 12772 31056 
+on root retrieve request got an error: Traceback (most recent call last):
+  File "C:\backup\my_works\global_logic\furniture_factory\table\table_api\api.py", line 142, in partial_update
+    instance = self.queryset.get(pk=kwargs.get('pk'))
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 220, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 422, in run_validation
+    value = self.validate(value)
+  File "C:\backup\my_works\global_logic\furniture_factory\table\serializers_table\serializers.py", line 16, in validate
+    request_method = self.context['request'].method
+KeyError: 'request'
+
+
+INFO 2021-03-14 11:01:33,446 api 12772 31056 
+on root retrieve request got an error: Traceback (most recent call last):
+  File "C:\backup\my_works\global_logic\furniture_factory\table\table_api\api.py", line 144, in partial_update
+    if serializer.is_valid():
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 220, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 422, in run_validation
+    value = self.validate(value)
+  File "C:\backup\my_works\global_logic\furniture_factory\table\serializers_table\serializers.py", line 16, in validate
+    request_method = self.context['request'].method
+KeyError: 'request'
+
+
+INFO 2021-03-14 11:08:37,651 api 18972 21260 
+on root retrieve request got an error: Traceback (most recent call last):
+  File "C:\backup\my_works\global_logic\furniture_factory\table\table_api\api.py", line 142, in partial_update
+    instance = self.queryset.get(pk=kwargs.get('pk'))
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 220, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\rest_framework\serializers.py", line 422, in run_validation
+    value = self.validate(value)
+  File "C:\backup\my_works\global_logic\furniture_factory\table\serializers_table\serializers.py", line 17, in validate
+    request_method = self.context['request'].method
+  File "C:\backup\my_works\global_logic\furniture_factory\table\serializers_table\serializers.py", line 17, in validate
+    request_method = self.context['request'].method
+  File "c:\users\mthapa\appdata\local\continuum\anaconda3\Lib\bdb.py", line 88, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "c:\users\mthapa\appdata\local\continuum\anaconda3\Lib\bdb.py", line 113, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+
+
+INFO 2021-03-14 12:07:15,557 api 25272 25676 
+on root retrieve request got an error: Traceback (most recent call last):
+  File "C:\backup\my_works\global_logic\furniture_factory\table\table_api\api.py", line 83, in retrieve
+    query_set = self.get_queryset().get(name=pk)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\query.py", line 408, in get
+    self.model._meta.object_name
+table.models.Table.DoesNotExist: Table matching query does not exist.
+
+
+INFO 2021-03-14 12:36:26,086 api 18004 3612 
+on root retrieve request got an error: Traceback (most recent call last):
+  File "C:\backup\my_works\global_logic\furniture_factory\table\table_api\api.py", line 83, in retrieve
+    query_set = self.get_queryset().get(name=pk)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\query.py", line 408, in get
+    self.model._meta.object_name
+table.models.Table.DoesNotExist: Table matching query does not exist.
+
+
+INFO 2021-03-14 12:37:47,945 api 22208 17872 
+on root retrieve request got an error: Traceback (most recent call last):
+  File "C:\backup\my_works\global_logic\furniture_factory\table\table_api\api.py", line 83, in retrieve
+    query_set = self.get_queryset().get(name__iexact=pk)
+  File "C:\backup\my_works\global_logic\global_logic_env\lib\site-packages\django\db\models\query.py", line 408, in get
+    self.model._meta.object_name
+table.models.Table.DoesNotExist: Table matching query does not exist.
+
+

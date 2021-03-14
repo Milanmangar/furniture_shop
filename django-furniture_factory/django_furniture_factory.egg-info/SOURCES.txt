@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+django_furniture_factory.egg-info/PKG-INFO
+django_furniture_factory.egg-info/SOURCES.txt
+django_furniture_factory.egg-info/dependency_links.txt
+django_furniture_factory.egg-info/top_level.txt
