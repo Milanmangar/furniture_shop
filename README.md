@@ -14,10 +14,10 @@ test project for global logic
 10) test the api in postman
 
 
-**Api details**
+**Api details can be seen by two method**
 
-1) API can be seen with the help swagger url in http://localhost:8000/swagger/, login with the super user credentials
-2) or import, exported postman file in path ``global_logic_furniture_company/django-furniture_factory/furniture_factory/furniture_factory_api_details.postman_collection.json``
+1) method 1 - API details can be seen with the help swagger url in http://localhost:8000/swagger/ and login with the superuser credentials to post, update, partail update and delete the data.
+2) method 2 - import, exported postman file in path ``global_logic_furniture_company/django-furniture_factory/furniture_factory/furniture_factory_api_details.postman_collection.json`` in postman and token can be generated with the help of url ``http://localhost:8000/api-token-auth/`` in get authentication token file and you will be needed to add username and password of superuser to generated token. and same token have to be passed in headers of  post, update, partail update and delete request.
 
 **How to get started with pip install package  name**
 1) global_logic_furniture_company/django-furniture_factory/
