@@ -9,7 +9,7 @@ Quick start
 
 2. pip install djangorestframework django-rest-swagger
 
-3. Add "table" to your INSTALLED_APPS setting like this::
+3. Add "table" to your INSTALLED_APPS setting like this in the existing django project::
 
     INSTALLED_APPS = [
         ...
